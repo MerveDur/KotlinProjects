@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="kahramanOlustur"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/yasText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:hint="Yas"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/sonucText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meslekText" />
+
+    <EditText
+        android:id="@+id/isimText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="İsim"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/meslekText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/meslekText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:hint="Meslek"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/yasText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isimText" />
+
+    <Button
+        android:id="@+id/sonucText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="kahramanOlustur"
+        android:text="Super Kahraman Oluştur"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/yasText"
+        app:layout_constraintTop_toBottomOf="@+id/yasText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="215dp"
+        android:text="İsim: Meslek: Yaş:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sonucText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
